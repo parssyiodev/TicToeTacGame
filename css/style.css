@@ -1,4 +1,29 @@
-.tiktok{width:300px; height:300px; border:1px solid #555;}
-.cl{border:1px solid hsl(0, 0%, 33%); font-size:40px; width:100px; height:100px; float:left; margin:0; padding:0px; background:#f9f9f9;}
-.hide{display:none}
+body{font-family: "Audiowide", sans-serif; background:#FBF8EF}
+h3{font-size:28px;}
+
 .player span{text-transform: uppercase;}
+.tiktok{width:300px; height:300px; margin:0 auto; border:1px solid #80CBC4; text-align: center;;}
+.cl{border:1px solid #80CBC4; font-size:40px; background:#ddf8f6; width:100px; height:100px; float:left; margin:0; padding:0px;}
+.hide{display:none}
+
+.container{width:1170px; margin:0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+.reset {
+    text-align: center;
+    width: 140px;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    background: #FFB433;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #cf8b16;
+    color: #111;
+}
+
+.reset:hover{
+    box-shadow: 1px 1px 11px #333;}
+

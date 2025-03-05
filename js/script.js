@@ -50,6 +50,8 @@ const disabledBx = () =>{
     for (box of boxes){
         box.disabled = true;
     }
+
+    turn.classList.add("hide");
 }
 
 const enabledBx = () =>{
@@ -60,7 +62,12 @@ const enabledBx = () =>{
 }
 
 const showWinner = (win) => {
-    winner.innerText = `Congratulation! Winner ${playerX}`;
+    if(win === "X"){
+        winner.innerText = `Congratulation ${playerA}! You're Winner`;
+    } else{
+        winner.innerText = `Congratulation ${playerB}! You're Winner`;
+    }
+    
     disabledBx()
 }
 
