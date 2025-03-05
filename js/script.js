@@ -1,8 +1,19 @@
 let boxes = document.querySelectorAll(".cl");
 let result = document.querySelectorAll("#winner");
 let reset = document.querySelector(".reset");
+let pl1 = document.querySelector("#pl1");
+let pl2 = document.querySelector("#pl2");
+let turn = document.querySelector("#turn");
 
-let playerX = true;
+const playerA = prompt("Please Enter Player1 Name");
+const playerB = prompt("Please Enter Player2 Name");
+
+pl1.innerText = `${playerA}`;
+pl2.innerText = `${playerB}`;
+
+turn.innerHTML =`It's ${playerA} Trun`
+
+let playerX = playerA;
 let count = 0;
 
 let wincom = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]] //winning Combinations
@@ -10,12 +21,14 @@ let wincom = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,
 
 boxes.forEach((box)=>{
     box.addEventListener("click", () => {
-        if(playerX){                           //If playerX is True
+        if(playerX === playerA){                           //If playerX is True
             box.innerText = "X";
-            playerX = false;
+            playerX = playerB;
+            turn.innerHTML =`It's ${playerB} Trun`
         } else{                                //if playerX is not True
             box.innerText = "O";    
-            playerX = true;
+            playerX = playerA;
+            turn.innerHTML =`It's ${playerA} Trun`
         }
         box.disabled = true;
         count++;
@@ -47,7 +60,7 @@ const enabledBx = () =>{
 }
 
 const showWinner = (win) => {
-    winner.innerText = `Congratulation! Winner ${win}`;
+    winner.innerText = `Congratulation! Winner ${playerX}`;
     disabledBx()
 }
 
