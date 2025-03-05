@@ -71,6 +71,11 @@ const showWinner = (win) => {
     disabledBx()
 }
 
+var blink = setInterval(function () {
+    var ele = document.getElementById('winner');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, 500);
+
 const checkwinner = () =>{
     for (let wcom of wincom){
         

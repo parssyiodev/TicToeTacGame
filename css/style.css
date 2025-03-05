@@ -1,12 +1,13 @@
-body{font-family: "Audiowide", sans-serif; background:#FBF8EF}
+body{font-family: "Audiowide", sans-serif; background:#faebbc}
+.container{width:1170px; margin:0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif;}
 h3{font-size:28px;}
-
-.player span{text-transform: uppercase;}
-.tiktok{width:300px; height:300px; margin:0 auto; border:1px solid #80CBC4; text-align: center;;}
+.players{font-size:28px; font-weight: 500;}
+.players span{text-transform: uppercase; font-weight: 800; color:#2DAA9E;}
+.tiktok{width:300px; height:300px; margin:30px auto; border:10px solid #80CBC4; text-align: center; box-shadow: 0px 0px 80px #9e7e45;}
 .cl{border:1px solid #80CBC4; font-size:40px; background:#ddf8f6; width:100px; height:100px; float:left; margin:0; padding:0px;}
 .hide{display:none}
-
-.container{width:1170px; margin:0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+#turn{text-transform: capitalize;}
+#winner{font-weight: 800; color:#ffa600; text-transform: capitalize;}
 
 .reset {
     text-align: center;
@@ -20,7 +21,7 @@ h3{font-size:28px;}
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #cf8b16;
+    border: 2px solid #9e7e45;
     color: #111;
 }
 
